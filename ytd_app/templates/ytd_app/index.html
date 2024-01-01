@@ -1,5 +1,4 @@
 {% load static %}
-{% load mathfilters %}
 {% load my_filters %}
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +57,7 @@
                             {% endif %}
                             <p class="filesize">{{ stream.file_size }}</p>
                             <p class="type">{{ stream.extension }}</p>
-                            
+
                             <a href="{{ stream.video_url }}" style="text-decoration: none;"
                                    download="{{ title }}.{{ stream.extension }}" target="_blank">Download <i
                                     class=" fa fa-download"></i></a>
